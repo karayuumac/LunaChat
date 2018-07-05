@@ -179,7 +179,7 @@ usageUnmute: '&6/%s unmute (name) &7- 指定したプレイヤーのチャンネ
 usageHide: '&6/%s hide [channel] &7- 指定したチャンネルの発言内容を非表示にします。'
 usageHidePlayer: '&6/%s hide (player) [-p] &7- 指定したプレイヤーの発言内容を非表示にします。(指定プレイヤー名と同名のチャンネルがある場合、-pフラグを指定することでプレイヤーの発言を非表示に出来ます)'
 usageUnhide: '&6/%s unhide [channel] &7- 指定したチャンネルの発言内容を非表示から表示に戻します。'
-usageUnhidePlayer: '&6/%s unhide (player) &7- 指定したプレイヤーの発言内容を非表示から表示に戻します。'
+usageUnhidePlayer: '&6/%s unhide (player) [-p] &7- 指定したプレイヤーの発言内容を非表示から表示に戻します。(指定プレイヤー名と同名のチャンネルがある場合、-pフラグを指定することでプレイヤーの発言を表示に出来ます)'
 usageInfo: '&6/%s info [channel] &7- チャンネルの情報を表示します。'
 usageLog: '&6/%s log [channel] [p=player] [f=filter] [d=date] [r] &7- チャンネルの発言ログを表示します。'
 

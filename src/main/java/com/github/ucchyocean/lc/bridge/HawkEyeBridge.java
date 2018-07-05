@@ -53,7 +53,7 @@ public class HawkEyeBridge {
         new BukkitRunnable() {
             public void run() {
                 if ( isV162orLater ) {
-                    HawkEyeAPI.addEntry(entry);
+                    HawkEyeAPI.addEntry(LunaChat.getInstance(), entry);
                 } else {
                     HawkEyeAPI.addEntry(LunaChat.getInstance(), entry);
                 }

@@ -97,13 +97,19 @@ public class HideCommand extends SubCommandAbst {
 
         // 引数チェック
         String cname = null;
+        Boolean isHideChat = true;
         if ( args.length <= 1 ) {
             Channel def = api.getDefaultChannel(player.getName());
-            if ( def != null ) {
+            if (def != null) {
                 cname = def.getName();
             }
-        } else if ( args.length >= 2 ) {
+        } else if (args.length == 2) {
             cname = args[1];
+        } else if ( args.length == 3 ) {
+            cname = args[1];
+            if (args[2].equals("-p")) {
+                isHideChat = false;
+            }
         } else {
             sendResourceMessage(sender, PREERR, "errmsgCommand");
             return true;
@@ -127,7 +133,7 @@ public class HideCommand extends SubCommandAbst {
             return true;
         }
 
-        if ( isChannelCommand ) {
+        if ( isChannelCommand && isHideChat ) {
             // チャンネルが対象の場合の処理
 
             // 既に非表示になっていないかどうかをチェックする
